@@ -14,5 +14,6 @@
         <button wire:click="decrement" class="btn btn-secondary">Decrementing</button>
     </div>
 
-    <livewire:create-user />
+    {{--
+    <livewire:create-user /> --}}
 </div>
