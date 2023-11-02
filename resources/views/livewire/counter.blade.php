@@ -12,6 +12,7 @@
         <h1 class="text-primary">your count is : {{ $count }}</h1>
         <button wire:click="increment" class="btn btn-primary">Incrementing</button>
         <button wire:click="decrement" class="btn btn-secondary">Decrementing</button>
-
     </div>
+
+    <livewire:create-user />
 </div>
