@@ -33,11 +33,12 @@ class Counter extends Component
 
     public function render()
     {
-        return view('livewire.counter')->layoutData([
-            'metaKeys' => 'some words',
-            'MetaDescription' => 'Some description',
-            'metaAuthor' => 'Mr james somebody',
-            'title' => 'My very  title'
-        ]);
+        return view('livewire.counter')
+            ->layoutData([
+                'metaKeys' => 'some words',
+                'MetaDescription' => 'Some description',
+                'metaAuthor' => 'Mr james somebody',
+                'title' => 'My very title'
+            ]);
     }
 }
