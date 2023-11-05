@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Counter;
+use App\Livewire\DropDown;
 use App\Livewire\Registeruser;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,8 @@ Route::view('/', 'welcome');
 Route::get('/counter', Counter::class);
 
 Route::get('/register', Registeruser::class);
+
+Route::get('/dropdown', DropDown::class);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
