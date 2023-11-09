@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AllUsers;
 use App\Livewire\Counter;
 use App\Livewire\DropDown;
 use App\Livewire\FileUpload;
@@ -26,6 +27,8 @@ Route::get('/register', Registeruser::class);
 Route::get('/dropdown', DropDown::class);
 
 Route::get('/fileupload', FileUpload::class);
+
+Route::get('/users', AllUsers::class);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
